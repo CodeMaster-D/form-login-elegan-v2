@@ -1,0 +1,108 @@
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+    font-family: Arial, sans-serif;
+    cursor:none;
+}
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.login-container:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(199, 196, 196, 0.445);
+    
+}
+.input-group {
+    margin: 20px 0;
+    position: relative;
+    
+}
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 16px;
+}
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    
+    
+}
+.options input {
+    margin-right: 5px;
+    
+}
+.login-btn {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+ 
+}
+
+.login-btn:hover{
+    background: #34495e;
+}
+.cursor{position:absolute; background: #cfc7c762; width:50px; height:50px; border-radius:50px; top:50% solid; left:50%; animation: pulse .5s cubic-bezier(.51,0,0.4,.5) alternate infinite; transform: translate(-50%,-50%) scale(1);}
+
+@keyframes pulse {
+  from { width:50px;height:50px; }
+  to { width:60px; height:60px; }
+}
+
+div.active { animation:bounce .5s ease; }
+@keyframes bounce {
+ 
+ 100%{ transform: translate(-50%,-50%) scale(2); opacity:0; }
+  0%{ transform: translate(-50%,-50%) scale(1); opacity:1; }
+} 
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(219, 219, 219, 0.744);
+    border-radius: 50%;
+    z-index: 999;
+    pointer-events: none;
+
+  }
+
+
+
+
